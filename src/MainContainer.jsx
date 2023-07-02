@@ -1,16 +1,20 @@
 import React from 'react'
-import { Canvas } from '@react-three/fiber'
-import { Color } from 'three'
-import { Stars, OrbitControls } from '@react-three/drei'
+import { Color, DirectionalLight } from 'three'
+import { Stars, OrbitControls, useHelper } from '@react-three/drei'
 import AnimatedStars from './AnimatedStars'
+import Earth from './Earth'
+import *as THREE from 'three'
+import { useRef } from 'react'
 
 const MainContainer = () => {
+    
   return (
-    <Canvas>
+    <>
         <color attach='background' args={['black']}/>
         <OrbitControls/>
         <AnimatedStars/>
-    </Canvas>
+        <Earth />
+    </>
     )
 }
 
