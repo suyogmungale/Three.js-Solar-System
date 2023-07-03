@@ -32,7 +32,7 @@ const Earth = () => {
 
   return (
     <>
-    <group position={[8,0,0]}>
+    <group position={[4,0,0]}>
       <mesh ref={earthRef} geometry={geometry} material={material}>
         <sphereGeometry args={[1, 32, 32]} />
         <meshStandardMaterial map={earthTexture} />
